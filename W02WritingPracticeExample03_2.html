@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<title>W02WritingPracticeExample03</title>
+</head>
+
+<body>
+<div id="container">
+<p class="hover" style="text-indent: 40px">
+The Reason I renrolled in pathways was to be able to improve my life by getting a degree. I have since learned after seeing many friends graduate that the degree has helped them secure better wages for a better way of living. Konwing that following the gospel also improves one's ways of living betrer spiritually leaders have also talked about improving one's educational progress also improve's one's way of living. President Gilbert talks in Temples or learning the temple is the place for us to build up our spiritual knowledge here in pathways we are building up our temple of knowledge which helps us to learn more and better improve our lives with education. I've deinitely learned from my past two attempts that if I readly don't push myselft to get things done, I will go no where and be left behind. I know that we all have our time for these things but if one doesn't push them selves to move forward you may never get o your time. This also relates to my spiritual growth if I don't follow what is asked of me from my heavenly father I can't be in the highest of kingdoms with my heavenly father. So, if I push myself in the things of the lord and educations I can go far in my physical life and spiritual life.
+The Reason I renrolled in pathways was to be able to improve my life by getting a degree. I have since learned after seeing many friends graduate that the degree has helped them secure better wages for a better way of living. Konwing that following the gospel also improves one's ways of living betrer spiritually leaders have also talked about improving one's educational progress also improve's one's way of living. President Gilbert talks in Temples or learning the temple is the place for us to build up our spiritual knowledge here in pathways we are building up our temple of knowledge which helps us to learn more and better improve our lives with education. I've deinitely learned from my past two attempts that if I readly don't push myselft to get things done, I will go no where and be left behind. I know that we all have our time for these things but if one doesn't push them selves to move forward you may never get o your time. This also relates to my spiritual growth if I don't follow what is asked of me from my heavenly father I can't be in the highest of kingdoms with my heavenly father. So, if I push myself in the things of the lord and educations I can go far in my physical life and spiritual life. The Reason I renrolled in pathways was to be able to improve my life by getting a degree. I have since learned after seeing many friends graduate that the degree has helped them secure better wages for a better way of living. Konwing that following the gospel also improves one's ways of living betrer spiritually leaders have also talked about improving one's educational progress also improve's one's way of living. President Gilbert talks in Temples or learning the temple is the place for us to build up our spiritual knowledge here in pathways we are building up our temple of knowledge which helps us to learn more and better improve our lives with education. I've deinitely learned from my past two attempts that if I readly don't push myselft to get things done, I will go no where and be left behind. I know that we all have our time for these things but if one doesn't push them selves to move forward you may never get o your time. This also relates to my spiritual growth if I don't follow what is asked of me from my heavenly father I can't be in the highest of kingdoms with my heavenly father. So, if I push myself in the things of the lord and educations I can go far in my physical life and spiritual life. The Reason I renrolled in pathways was to be able to improve my life by getting a degree. I have since learned after seeing many friends graduate that the degree has helped them secure better wages for a better way of living. Konwing that following the gospel also improves one's ways of living betrer spiritually leaders have also talked about improving one's educational progress also improve's one's way of living. President Gilbert talks in Temples or learning the temple is the place for us to build up our spiritual knowledge here in pathways we are building up our temple of knowledge which helps us to learn more and better improve our lives with education. I've deinitely learned from my past two attempts that if I readly don't push myselft to get things done, I will go no where and be left behind. I know that we all have our time for these things but if one doesn't push them selves to move forward you may never get o your time. This also relates to my spiritual growth if I don't follow what is asked of me from my heavenly father I can't be in the highest of kingdoms with my heavenly father. So, if I push myself in the things of the lord and educations I can go far in my physical life and spiritual life. The Reason I renrolled in pathways was to be able to improve my life by getting a degree. I have since learned after seeing many friends graduate that the degree has helped them secure better wages for a better way of living. Konwing that following the gospel also improves one's ways of living betrer spiritually leaders have also talked about improving one's educational progress also improve's one's way of living. President Gilbert talks in Temples or learning the temple is the place for us to build up our spiritual knowledge here in pathways we are building up our temple of knowledge which helps us to learn more and better improve our lives with education. I've deinitely learned from my past two attempts that if I readly don't push myselft to get things done, I will go no where and be left behind. I know that we all have our time for these things but if one doesn't push them selves to move forward you may never get o your time. This also relates to my spiritual growth if I don't follow what is asked of me from my heavenly father I can't be in the highest of kingdoms with my heavenly father. So, if I push myself in the things of the lord and educations I can go far in my physical life and spiritual life. 
+
+
+</p></div>
+
+</body>
+<style>
+   #container {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+  }
+</style>
+<script>
+
+// IMPORTANT: The text in <p> tags must be tagged with "hover" class.  Sentances are defined as ones ending in a period, question mark, or exclamation point.
+
+// You can change these colors (https://www.w3schools.com/colors/colors_names.asp)
+var hover_fg_color = "e87f80";
+var hover_bg_color = "White";
+var click_fg_color = "White";
+var click_bg_color = "e87f80"
+
+// Split up all blocks of text tagged with "hover"
+Array.from(document.getElementsByClassName("hover")).forEach(span_lines);
+
+function span_lines(block) {
+        // Split up block of text into spanned sentances with event handlers 
+        var new_html = block.innerHTML.replace(/([\.\?\!])/g,"$1</span><span onmouseover=\"hover_on(event, this);\" onmouseleave=\"hover_off(event, this);\" onclick=\"hover_click(event, this);\" hover_selected=\"no\";>");
+        // Need to add an open tag to the front
+        new_html = "<span onmouseover=\"hover_on(event, this);\" onmouseleave=\"hover_off(event, this);\" onclick=\"hover_click(event, this);\" hover_selected=\"no\";>" + new_html
+        // Remove the extra open tag added at the end
+        new_html = new_html.replace(/<span onmouseover="hover_on(event, this);" onmouseleave="hover_off(event, this); onclick="hover_click(event, this);" hover_selected="no";>$/,"");
+        block.innerHTML = new_html;
+}
+
+function hover_on(event, obj) {
+    // Only highlight if its not previously selected
+    if (obj.getAttribute("hover_selected") == "no") {
+        obj.style.color = hover_fg_color;
+        obj.style.backgroundColor = hover_bg_color;
+   }
+}
+
+function hover_off(event, obj) {
+    // Only remove highlighting if its not previously selected
+    if (obj.getAttribute("hover_selected") == "no") {
+        obj.style.color = "";
+        obj.style.backgroundColor = "";
+   }
+}
+
+function hover_click(event, obj) {
+    // Toggle the selection and highlight if toggled on
+    if (obj.getAttribute("hover_selected") == "no") {
+        obj.style.color = click_fg_color;
+        obj.style.backgroundColor = click_bg_color;
+        obj.setAttribute("hover_selected", "yes");
+    } else {
+        // When turning it off, we are still hovered over it
+        obj.style.color = hover_fg_color;
+        obj.style.backgroundColor = hover_bg_color
+        obj.setAttribute("hover_selected","no");
+    }
+}
+const sendPostMessage = () => {
+    if (height !== document.getElementById('container').offsetHeight) {
+      height = document.getElementById('container').offsetHeight;
+      window.parent.postMessage({
+        frameHeight: height
+      }, '*');
+      console.log(height);
+    }
+  };
+  window.onload = () => sendPostMessage();
+  window.onresize = () => sendPostMessage();
+
+</script>
+
+</html>
